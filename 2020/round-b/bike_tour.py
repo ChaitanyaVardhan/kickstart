@@ -4,8 +4,6 @@ def solve_for_peaks(N, S):
     while i < len(S):
         if i < len(S) - 1 and S[i] > S[i+1] and S[i] > S[i-1]:
             peak_count += 1
-        if i == len(S) - 1 and S[i] > S[i-1]:
-            peak_count += 1
         i += 1
 
     return peak_count
